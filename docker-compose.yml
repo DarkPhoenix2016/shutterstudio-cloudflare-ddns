@@ -1,0 +1,7 @@
+services:
+  cloudflare-ddns:
+    build: .
+    container_name: cloudflare-ddns
+    restart: unless-stopped
+    env_file:
+      - .env
